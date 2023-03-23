@@ -1,0 +1,26 @@
+p#typeName {
+  width: 150px;
+  margin: 2px;
+  padding: 2px;
+  text-align: center;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+
+#typeRelations {
+  width: 450px;
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid black;
+}
+
+#typeRelations > div {
+  padding: 1px;
+  border: 1px solid black;
+}
+
+#typeRelations .relationName {
+  padding: 1px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}

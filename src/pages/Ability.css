@@ -1,0 +1,37 @@
+#abilityName {
+  width: 150px;
+  margin: 2px;
+  padding: 2px;
+  text-align: center;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+
+#abilityEffect {
+  width: 90vw;
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid black;
+}
+
+ul#pokemonWhichHave {
+  max-width: 300px;
+  max-height: 10000px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid black;
+  list-style: none;
+}
+
+ul#pokemonWhichHave > li {
+  border: 1px solid black;
+  margin: 2px;
+  padding: 2px;
+}
+
+.pokemon {
+  color: black;
+}

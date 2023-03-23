@@ -1,0 +1,90 @@
+#moveInfo1 {
+  width: 100px;
+  margin: 2px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#moveInfo1 > p {
+  font-weight: bolder;
+  border-bottom: 1px solid black;
+}
+
+#moveInfo1 > div {
+  padding: 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.type {
+  width: 40px;
+}
+
+#moveInfo2 {
+  width: 150px;
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid black;
+}
+
+#moveInfo2 > p {
+  border: 1px solid black;
+}
+
+#moveInfo2 > p > span {
+  font-weight: bold;
+}
+
+p#moveEffect {
+  width: 90vw;
+  margin: 2px;
+  padding: 1px;
+  border: 1px solid black;
+}
+
+ul#pokemonWhichLearn {
+  max-width: 100vw;
+  max-height: 18002px;
+  margin: 2px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid black;
+  list-style: none;
+}
+
+ul#pokemonWhichLearn > li {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.pokemon {
+  color: black;
+}
+
+@media (min-width: 481px) {
+  ul#pokemonWhichLearn {
+    max-height: 15802px;
+  }
+}
+
+@media (min-width: 641px) {
+  ul#pokemonWhichLearn {
+    max-height: 8002px;
+  }
+}
+
+@media (min-width: 961px) {
+  ul#pokemonWhichLearn {
+    max-width: 90vw;
+    max-height: 5002px;
+  }
+
+  ul#pokemonWhichLearn > li {
+    margin: 1px;
+  }
+}

@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container > * {
+  margin: 10px;
+}
+
+#sprites {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+#sprites > img {
+  width: 96px;
+  height: 96px;
+}
+
+#name {
+  font-weight: 900;
+}
+
+#types > * {
+  margin: 0 5px;
+}
+
+.group1 {
+  text-align: center;
+  border: 2px solid black;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.group2 {
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.group2 span {
+  font-weight: bold;
+}
+
+#stats {
+  width: 150px;
+  height: 130px;
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.stat > span {
+  font-weight: bold;
+}
+
+.moves {
+  display: flex;
+  flex-direction: column;
+}
+
+.move {
+  width: 250px;
+  padding: 0 5px;
+  text-align: start;
+  border: 1px solid black;
+  list-style: none;
+}
+
+.moveLevel {
+  display: inline-block;
+  width: 35px;
+}
+
+.moveName {
+  display: inline-block;
+  width: 120px;
+  color: black;
+}
+
+.moveVersion {
+  display: inline-block;
+  width: 200px;
+  text-align: end;
+}
+
+@media (min-width: 881px) {
+  .container {
+    flex-direction: row;
+  }
+}

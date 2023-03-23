@@ -1,0 +1,16 @@
+body {
+  overflow-x: hidden;
+}
+
+#NavBar {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#HomeLink {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
