@@ -7,9 +7,11 @@ import "./Pokemon.css";
 function Pokemon() {
   const { pokemonName } = useParams();
   const [pokemonInfo, setPokemonInfo] = useState(null);
+  const [moveMethod, setMoveMethod] = useState("level-up");
   const P = new Pokedex();
   const getPokemonInfo = async () => {
     const res = await P.getPokemonByName(pokemonName);
+    console.log(res);
     setPokemonInfo(res);
   };
 
@@ -90,10 +92,15 @@ function Pokemon() {
         </ul>
 
         <ul className="moves">
+          <div id="learnMethod">
+            <button onClick={() => setMoveMethod("level-up")}>Level up</button>
+            <button onClick={() => setMoveMethod("machine")}>TM</button>
+            <button onClick={() => setMoveMethod("tutor")}>Move Tutor</button>
+          </div>
           {pokemonInfo.moves.map(
             (move, index) =>
               move.version_group_details[move.version_group_details.length - 1]
-                .move_learn_method.name === "level-up" && (
+                .move_learn_method.name === moveMethod && (
                 <li key={index} className="move">
                   <span className="moveLevel">
                     {
